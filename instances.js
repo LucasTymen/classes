@@ -15,7 +15,10 @@ console.log(surgeonJackson)
 const surgeonAlZahrawi = new Surgeon('Al-Zahrawi', 'Neurology');
 console.log(surgeonAlZahrawi)
 // courses :
+
 /*
+
 An instance is an object that contains the property names and methods of a
 class, but with unique property values
+
 */

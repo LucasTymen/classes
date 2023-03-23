@@ -13,6 +13,7 @@ You may create these as either named functions or anonymous function expressions
 /* shape-area.js */
 const PI = Math.PI;
 
+
 // Define and export circleArea() and squareArea() below
 let radiusLength = ('number')
 let sideLength = ('number')

@@ -20,9 +20,11 @@ const areaOfCircle = areaFunctions.circleArea(radius);
 const areaOfSquare = areaFunctions.squareArea(sideLength);
 
 /*
+
 Or with option 2:
 
 const areaOfCircle = circleArea(radius);
 
 const areaOfSquare = squareArea(sideLength);
+
 */

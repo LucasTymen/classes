@@ -7,6 +7,7 @@ class Surgeon {
 }
 // course
 /*
+
 Although you may see similarities between class and object syntax, there is one
 important method that sets them apart. It’s called the constructor method.
 JavaScript calls the constructor() method every time it creates a new instance
