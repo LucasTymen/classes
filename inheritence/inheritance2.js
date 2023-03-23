@@ -16,6 +16,7 @@ class HospitalEmployee {
   }
 }
 
+
 /*
 // ############## courses ###############
 Inheritance II
@@ -44,8 +45,11 @@ class Animal {
     this._behavior++;
   }
 }
+
 /*
+
 The code below shows the Cat class that will inherit information from the Animal class.
+
 */
 class Cat {
   constructor(name, usesLitter) {
