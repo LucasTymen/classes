@@ -17,6 +17,17 @@ const sortPlayersByValueFromCity = (playersArr, city, sortKey) => {
   });
 }
 
+/*
+Make Code Easier to Read and Reuse
+
+The code for sortPlayersByValueFromCity() and filterPlayersByValueFromCity() is hard to read. With currying, we can write
+functions that handle one task, and are therefore not only easier to read and understand, but more reusable. For
+example, we can create a curried function that filters an array of objects by a provided key and value.
+*/
+/*
+Make Code More Modular
+Now we can reuse the filtered San Francisco object for additional specialized functions. Let’s use it to sort the players by the date they joined the sports league.
+*/
 
 const setFilter = array => key => value => array.filter(x => x[key] === value);
 const filterPlayers = setFilter(players);
@@ -29,6 +40,14 @@ console.log(filteredPlayersBySanFrancisco); // Returns an array of players from 
 console.log(filteredPlayersBySoccer); // Returns an array of players that play soccer
 
 console.log("=====================================================")
+
+/*
+// ######## Making code more modular ########
+Now we can reuse the filtered San Francisco object for additional specialized functions. Let’s use it to sort the
+players by the date they joined the sports league.
+*/
+
+
 const sortArrayByValue = sortArray => sortKey => {
   return sortArray.sort(function(a, b){
       if(a[sortKey] < b[sortKey]) { return -1; }
@@ -40,3 +59,8 @@ const sortArrayByValue = sortArray => sortKey => {
 const sortSanFrancisco = sortArrayByValue(filteredPlayersBySanFrancisco);
 const sortSFByDateJoined = sortSanFrancisco("dateJoined");
 console.log(sortSFByDateJoined);
+
+/*
+// ######## Summary ########
+In this article, we took a look at how currying works under the hood thanks to closures in JavaScript, and how you can use different syntax techniques to curry your functions. Overall, thanks to the modularity of curried functions, you can now use currying in your code to make your functions have a single purpose and therefore be easier to test, debug, maintain, and read.
+*/
