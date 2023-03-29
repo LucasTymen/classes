@@ -11,9 +11,9 @@ const players = [
 
 const sortPlayersByValueFromCity = (playersArr, city, sortKey) => {
   return playersArr.filter(player => {
-      return player.city === city;
-  }).sort((a,b) => {
-      return a[sortKey] - b[sortKey]
+    return player.city === city;
+  }).sort((a, b) => {
+    return a[sortKey] - b[sortKey]
   });
 }
 
@@ -49,10 +49,10 @@ players by the date they joined the sports league.
 
 
 const sortArrayByValue = sortArray => sortKey => {
-  return sortArray.sort(function(a, b){
-      if(a[sortKey] < b[sortKey]) { return -1; }
-      if(a[sortKey] > b[sortKey]) { return 1; }
-      return 0;
+  return sortArray.sort(function (a, b) {
+    if (a[sortKey] < b[sortKey]) { return -1; }
+    if (a[sortKey] > b[sortKey]) { return 1; }
+    return 0;
   });
 }
 
